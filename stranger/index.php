@@ -55,16 +55,16 @@
           var char = msg.charAt(i);
           if (char == ' ') char = "Vazio";
           
-          var link = 'https://imaginefield-minimarvin.c9.io/stranger/images/' + char + '.png'
+          var link = 'https://michaelbarney.com/stranger/images/' + char + '.png'
           charecs.push(link)
         }
-        var link = 'https://imaginefield-minimarvin.c9.io/stranger/images/Vazio.png'
+        var link = 'https://michaelbarney.com/stranger/images/Vazio.png'
         charecs.push(link);
         gifshot.createGIF({
             images: charecs,
             interval: 1,
-            gifWidth: 400,
-            gifHeight: 300,
+            gifWidth: 500,
+            gifHeight: 500,
             numFrames: msg.length,
             text: 'Created Using Stranger Text',
             fontWeight: 'bold',
@@ -75,8 +75,8 @@
                 var image = obj.image, animatedImage = document.createElement('img');
                 animatedImage.src = image;
                 var div = document.getElementById('content');
-                div.innerHTML="<h3>https://imaginefield-minimarvin.c9.io/stranger/tmp/" + msg + ".gif</h3>" +
-                             '<div class="fb-share-button" data-href="https://imaginefield-minimarvin.c9.io/stranger/tmp/' + msg +'.gif" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Compartilhar</a></div>'
+                div.innerHTML="<h3>https://michaelbarney.com/stranger/tmp/" + msg + ".gif</h3>" +
+                             '<div class="fb-share-button" data-href="https://michaelbarney.com/stranger/tmp/' + msg +'.gif" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Compartilhar</a></div>'
                               ;
                 div.appendChild(animatedImage);
                 $.ajax({
