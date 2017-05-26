@@ -1185,6 +1185,9 @@ a.fa.fa-google-plus.icon.icon-border.googleplus:hover {
 a.fa.fa-twitter.icon.icon-border.twitter:hover {
     color: #4099ff;
 }
+a.fa.fa-instagram.icon.icon-border.instagram:hover {
+    color: #ffb540;
+}
 a.fa.fa-dribbble.icon.icon-border.dribbble:hover {
     color: #ec4a89;
 }
@@ -1236,6 +1239,21 @@ a.fa.fa-dribbble.icon.icon-border.dribbble:hover {
 	-o-box-shadow: inset 0 0 0 4px #4099ff;
 	-ms-box-shadow: inset 0 0 0 4px #4099ff;
 	box-shadow: inset 0 0 0 4px #4099ff;
+} 
+/* instagram */
+.icon-border.instagram::before {
+	-webkit-box-shadow: inset 0 0 0 48px #ffb540;
+	-moz-box-shadow: inset 0 0 0 48px #ffb540;
+	-o-box-shadow: inset 0 0 0 48px #ffb540;
+	-ms-box-shadow: inset 0 0 0 48px #ffb540;
+	box-shadow: inset 0 0 0 48px #ffb540;
+} 
+.icon-border.instagram:hover::before {
+	-webkit-box-shadow: inset 0 0 0 4px #ffb540;
+	-moz-box-shadow: inset 0 0 0 4px #ffb540;
+	-o-box-shadow: inset 0 0 0 4px #ffb540;
+	-ms-box-shadow: inset 0 0 0 4px #ffb540;
+	box-shadow: inset 0 0 0 4px #ffb540;
 } 
 /* google plus */
 .icon-border.googleplus::before {
