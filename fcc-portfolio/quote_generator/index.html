@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1">
+        <title>Homer Quote Generator</title>
+        
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Merriweather" rel="stylesheet">
+    </head>
+    
+    <body>
+        <script src="https://use.fontawesome.com/31485919b7.js"></script>
+        <div class ="container-fluid">
+            <div id = "back" class="row">
+                <div id = "holder" class="col-sm-6">
+                    <div id = "quotes">
+                        <div id = "animator" class="animated bounceIn">
+                            <i class="fa fa-quote-left wat" aria-hidden="true"></i>
+                            <h2 id ="quote" style ="display: inline;"></h2>
+                            <i class="fa fa-quote-right wat" aria-hidden="true"></i>
+                            <h3 style="text-align: right;">-Homer J. Simpson</h3>
+                        </div>
+                        
+                        <div class="row" id = "social">
+                            <div class="col-xs-6">
+                                <a id = "twitter" href="#" target="_blank">
+                                <span class="fa-stack fa-lg hover-button">
+                                    <i class="fa fa-square-o fa-stack-2x around"></i>
+                                    <i class="fa fa-twitter fa-stack-1x icon"></i>                          
+                                </span>
+                                </a>
+                                
+                                <!--
+                                <a href="#">
+                                    <span class="fa-stack fa-lg hover-button">
+                                        <i class="fa fa-square-o fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x"></i>                          
+                                    </span>
+                                </a>
+                                -->
+                            </div>
+                            
+                            <div class = "col-xs-6">
+                                <a href="#">
+                                    <div class = "hover-button" id="quoteButton">
+                                        New Quote
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id ="homer" class="hidden-xs">
+                    <div>
+                        <img src = "img/homer.png" class="img-responsive">
+                        <div id = "eye-right" class="eye"></div>
+                        <div id = "eye-left" class="eye"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script  src="js/index.js"></script>
+    </body>
+</html>
