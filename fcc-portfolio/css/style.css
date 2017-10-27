@@ -76,3 +76,9 @@ a:visited {
     color: inherit;
     cursor: auto;
 }
+
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}

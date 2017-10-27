@@ -1,10 +1,10 @@
 $(".fa-stack").hover(function(){
                       $(this).css("color", "#ffcc5c");
-                      $(this).addClass("animated").addClass("wobble");
+                      $(this).addClass("animated").addClass("jello");
                      },
                      function(){
                       $(this).css("color", "white");
-                      $(this).removeClass("wobble");
+                      $(this).removeClass("jello");
 });
 
 $(".black-fill").hover(function(){
