@@ -1,6 +1,6 @@
 $(".fa-stack").hover(function(){
                       $(this).css("color", "#ffcc5c");
-                      $(this).addClass("animated").addClass("jello");
+                      $(this).addClass("jello");
                      },
                      function(){
                       $(this).css("color", "white");

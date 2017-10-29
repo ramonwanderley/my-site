@@ -37,3 +37,16 @@
     vertical-align: middle;
     float: none;
 }
+
+@media (max-width: 600px) {
+  #name{
+    font-size: 42pt;
+  }
+  #quote{
+    font-size: 20pt;
+  }
+  
+  .topic{
+    float: left;
+  }
+}

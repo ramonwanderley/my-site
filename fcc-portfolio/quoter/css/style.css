@@ -1,5 +1,8 @@
-#back{
+body{
     background-color: #ffbb22;
+
+}
+#back{
     height: 100vh;
 }
 
@@ -42,6 +45,8 @@
      float: right;
      margin-top: 3px;
      padding: 3px 6px 3px 6px;
+     
+     text-align: center;
      
      border-style: solid;
      border-color: white;

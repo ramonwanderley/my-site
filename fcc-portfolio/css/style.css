@@ -29,6 +29,7 @@ body{
 }
 #portfolio{
   padding: 50px;
+  width: 100%;
 }
 .portfolio-item{
   background-color: white;
@@ -57,9 +58,8 @@ body{
 }
 
 #footer{
-  background-color: #555;
-  height: 100px;
   color: white;
+  background-color: #555;
   text-align: center;
   padding: 10px;
   font-family: 'PT Sans', sans-serif;
@@ -81,4 +81,10 @@ a:visited {
 .vertical-center {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+ .vertical-center{
+   display: block;
+ }
 }
