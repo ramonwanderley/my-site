@@ -14,7 +14,7 @@ $("#button-holder").on("click", function(){
 })
 
 window.onload = function(){
-    if(getParameterByName("city")){
+    if(getParameterByName("city") != null){
         var city =getParameterByName("city");
         $.getJSON("https://api.openweathermap.org/data/2.5/weather?appid=26e86f6a7a3e1882df78703644334252&units=metric&q="+ city, function(json){
             temp = Math.round(json["main"]["temp"]);
@@ -49,6 +49,9 @@ window.onload = function(){
                 setTemp(temp, unit);
                 $("#city").text(city);
                 $("#weather").text(description);
+                
+                $("#shower").css("display", "block");
+                $("#shower").addClass("bounceIn");
             });
           });
         }
