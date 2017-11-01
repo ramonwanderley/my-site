@@ -23,7 +23,7 @@
 #back{
     position: absolute;
     left: 0; top: 0; right: 0; bottom: 0;
-    background-image:url("images/snow.jpg");
+    background-image:url("https://images.pexels.com/photos/34090/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
     background-repeat: no-repeat;
     background-size:cover;
 }
