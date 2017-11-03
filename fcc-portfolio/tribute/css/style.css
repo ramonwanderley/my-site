@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 #name{
   font-family: 'Poppinn', serif;
   font-weight: bold;

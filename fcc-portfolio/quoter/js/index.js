@@ -4,6 +4,7 @@ var r_eye_l = 62;
 var r_eye_t = 36;
 
 window.onload = function() {
+    $("#homer").css("display", "block");
     updateQuote();
 }
 

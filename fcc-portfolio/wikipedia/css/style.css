@@ -1,0 +1,145 @@
+/*
+Color Palette: Green Bay
+http://www.color-hex.com/color-palette/48982
+*/
+body{
+    /*background-color: #3c7876;*/
+    background: linear-gradient(135deg, #3c7876 0%, rgba(142, 68, 173, 1) 100%);
+    font-family: 'PT Sans', sans-serif;
+    overflow:hidden;
+}
+
+#textField{
+    color: white;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 50pt;
+    background-color: transparent;
+    border: none;
+    
+}
+
+#textField:focus{
+    outline: none;
+}
+#choices{
+    display: none;
+    position: absolute;
+    left:0; right: 0; top: 10%; bottom: 0;
+    margin: auto;
+    height: 150px;
+    width:250px;
+}
+
+.choice{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #79b236;
+    transition: background-color 0.4s;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+}
+
+.changed{
+    display:none;
+    position:absolute !important;
+    right: 30px;
+    top: 20px;
+    z-index: 10;
+}
+.changed i{
+    position:absolute !important;
+    top: 20px;  
+    left: 25px;
+}
+
+.float{
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.space{
+    width: 50px;
+    display: table-cell;
+}
+
+
+.choice i{
+    font-size: 40pt;
+    color: white;
+}
+
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+#filler{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    right: 20px;
+    bottom: 0px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    display: none;
+    padding: 10px;
+}
+.filling{
+    text-align: center;
+    margin-top: 25px;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    font-size: 30pt;
+    border-radius: 25px;
+    
+    box-shadow: 0 7px 0px 0px rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar {
+      width: 15px;
+} /* this targets the default scrollbar (compulsory) */
+::-webkit-scrollbar-track {
+      background-color: transparent;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: #ecf646; 
+} /* this will style the thumb, ignoring the track */
+::-webkit-scrollbar-button {
+      background-color: transparent;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
+}
+
+
+@media(max-width:700px){
+    #new_search{
+       display: none !important;
+    }
+    #textField{
+        font-size: 3em;
+    }
+    #filler{
+        top: 7em;
+    }
+}

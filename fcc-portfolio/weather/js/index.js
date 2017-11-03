@@ -1,3 +1,7 @@
+if (location.protocol != 'https:'){
+ location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
+
 var unit = 0; //0 = C; 1 = F
 var temp = 25;
 var city;
@@ -14,9 +18,6 @@ $("#button-holder").on("click", function(){
 })
 
 window.onload = function(){
-    if (location.protocol != 'https:'){
-     location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-    }
     
     if(getParameterByName("city") != null){
         var city =getParameterByName("city");

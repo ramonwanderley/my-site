@@ -1,6 +1,6 @@
 body{
     background-color: #ffbb22;
-
+    overflow: hidden;
 }
 #back{
     height: 100vh;
@@ -55,6 +55,7 @@ body{
 }
 
 #homer{
+    display: none;
     width: 45vw;
     position: absolute;
     bottom: 0;

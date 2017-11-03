@@ -1,0 +1,44 @@
+<!--https://en.wikipedia.org/w/api.php?action=opensearch&search=cat-->
+<head>
+    <title>Wikipedia Viewer</title>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <script src="https://use.fontawesome.com/31485919b7.js"></script>
+</head>
+
+<body>
+    <p id="data"></p>
+    <a href="#" class="choice animated bounceInRight changed" id="new_search">
+        <i class="fa fa-search"></i>
+    </a>
+    
+    <form>
+        <input id="textField" disabled="disabled" type="text" autocomplete="off" name="q" class="type-wrap text-center"/>
+    </form>
+    
+    <div id="choices" class="animated bounceIn">
+        <a href="#" class="choice animated float" id="search">
+            <i class="fa fa-search"></i>
+        </a>
+        <div class="space"></div>
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="choice animated float" id="random">
+            <i class="fa fa-random"></i>
+        </a>
+    </div>
+    
+    <div id="filler">
+    </div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/typed.min.js'></script>
+    <script  src="js/index.js"></script>
+</body>
