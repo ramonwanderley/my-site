@@ -28,8 +28,8 @@ $("#search").on("click", function(){
     $(".type-wrap").text('');
     $(".type-wrap").removeData('typed');
     $(".type-wrap").typed({
-    	strings: ["Search Something..."],
-    	typeSpeed: 100,
+    	strings: ["Type Here to Search"],
+    	typeSpeed: 50,
     	loop: false,
     	contentType: 'html',
     	callback: function(){
@@ -52,9 +52,11 @@ $('#textField').on('input',function(e){
         if($(".filling").length > 0){
             $(".filling").each(function(){
                 //alert($(this).text());
-                var index = json[1].indexOf($(this).text());
+                var index = json[1].indexOf($(this).children(".title").text());
                 if(index > -1){
                     json[1].splice(index, 1);
+                    json[2].splice(index, 1);
+                    json[3].splice(index, 1);
                 }
                 else{
                     $(this).removeClass("moves");
@@ -66,10 +68,14 @@ $('#textField').on('input',function(e){
                 }
             });
         }
-        for(i = 0; i < json[1].length; i++){
-            $("#filler").append("<div class='filling animated bounceInUp'>"+json[1][i]+"</div>");
+        for(var i = 0; i < json[1].length; i++){
+            $("#filler").append(
+                "<div class='filling animated bounceInUp'>"+
+                    "<div class='title'>" + json[1][i] + "</div> <hr>" +
+                    "<div class='description'>" + json[2][i] + "</div>" +
+                    "<a class='btn btn-warning' target='_blank' href="+ json[3][i] + ">Read More</a>"+
+                "</div>");
         }  
-        //$("#fill").text(json[1][0]);
     });
 });
 
@@ -78,8 +84,9 @@ $("#filler").scroll(function(){
     
     $(".filling").each(function(){
         var element_top_position = $(this).offset().top;
-
-        if(element_top_position <= window_top_position){
+        var element_height = $(this).height();
+        
+        if(element_top_position + element_height/2 <= window_top_position){
             $(this).removeClass("bounceInLeft").addClass("bounceOutLeft");
         }
         else{
