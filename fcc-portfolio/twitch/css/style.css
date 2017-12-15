@@ -100,12 +100,14 @@ body{
     display: none;
 }
 
+/*
 @media (max-width: 999px) {
     #banner{
         position: absolute;
-        bottom: 0;
+
         left: 0;
         right: 0;
         top: 100px;
     }
 }
+*/
