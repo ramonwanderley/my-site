@@ -1,9 +1,3 @@
-/*
-    add others
-    go up on equals
-    add verification
-    animations
-*/
 var acc = "";
 
 $(document).ready(function(){
@@ -34,6 +28,9 @@ var oneOp = false;
 $(".number").click(function(){
     switch ($(this).text()) {
         case '=':
+            var res = $("#result").text()
+            $("#acc").text(res);
+            acc = res;
             calculate(acc);
             break;
         
