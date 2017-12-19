@@ -88,10 +88,17 @@ body{
 a:link {
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    cursor: pointer;
 }
 a:visited {
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    cursor: pointer;
+}
+
+
+#footer{
+    color: white;
+    margin-top: 200px;
+    text-align: center;
 }

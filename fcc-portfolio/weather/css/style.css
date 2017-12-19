@@ -48,6 +48,20 @@
     margin: auto;
 }
 
+#footer{
+    position: absolute;
+    right: 0; left: 0; bottom: 10px; margin: auto;
+    text-align: center;
+    color: white;
+    z-index: 999;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+#footer a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
 @media(max-width:400px){
     .myContainer{
         padding-top: 50%;

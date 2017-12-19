@@ -34,7 +34,7 @@ a:visited {
  width: 400px;
  top: 0; bottom:0; left:0; right:0;
  margin: auto;
- background-color: blue;
+ background-color: #9a4456;
  color: white;
  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
 }
@@ -60,4 +60,25 @@ a:visited {
     transition: all 2s;
     line-height: 1.75;
     cursor:pointer;
+}
+
+#footer{
+    position: absolute;
+    right: 0; left: 0; bottom: 10px; margin: auto;
+    text-align: center;
+    color: white;
+    z-index: 999;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+#footer a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+    #calculator{
+        box-shadow: none;
+    }
 }

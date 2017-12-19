@@ -44,8 +44,8 @@ body{
     line-height: 5px;
 }
 #banner li{
-    font-size: 20pt;
-    margin-left: 50px;
+    font-size: 30pt;
+    margin-left: 30px;
 }
 
 
@@ -100,14 +100,32 @@ body{
     display: none;
 }
 
-/*
-@media (max-width: 999px) {
-    #banner{
-        position: absolute;
+#footer{
+    position: absolute;
+    right: 0; left: 0; bottom: 10px; margin: auto;
+    text-align: center;
+    color: white;
+    z-index: 999;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+#footer a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
 
-        left: 0;
-        right: 0;
-        top: 100px;
+
+@media (max-width: 700px) {
+    li{
+        font-size: 15pt !important;
+        margin-left: 10px !important;
+    }
+    #banner{
+        margin: 5px !important;
+        margin-top: 50px !important;
+    }
+    #name i, h1{
+        font-size: 30pt;
+        line-height: 8pt;
     }
 }
-*/
