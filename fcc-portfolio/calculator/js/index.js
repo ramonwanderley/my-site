@@ -21,9 +21,10 @@ function(){
     $(this).css("background-color","#723534");   
 });
 
-
-
 var oneOp = false;
+var dec = false;
+var size = 0;
+var limit = 16;
 
 $(".number").click(function(){
     switch ($(this).text()) {
@@ -34,9 +35,22 @@ $(".number").click(function(){
             calculate(acc);
             break;
         
+        case '.':
+            if(!dec && size<=limit){
+                acc = acc + $(this).text();
+                $("#acc").text(acc);
+                dec = true;
+                size++
+            }
+            break
+        
         default:
+        dec = false;
+        if(size <= limit){
            acc = acc + $(this).text();
            $("#acc").text(acc);
+            size++;
+        }
     }
     calculate(acc);
     oneOp = false;
@@ -50,13 +64,17 @@ $(".op").click(function(){
              $("#acc").text("");
              $("#result").text("");
              acc = "";
+             size = 0;
+             oneOp = false;
+             dec = false;
             break;
         
         default:
-            if(!oneOp){
+            if(!oneOp && !dec && size <= limit){
                acc = acc + $(this).text();
                $("#acc").text(acc);
                oneOp = true;
+               size++;
             }
             break;
     }

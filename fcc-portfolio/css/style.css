@@ -1,11 +1,16 @@
 body{
     font-family: 'PT Sans', sans-serif;
 }
+
 #header{
   padding: 10px;
   background-color: #96ceb4;
 }
-
+#fcc{
+  height: 30pt; 
+  display: inline; 
+  margin: -15px 10px 0px 0px;
+}
 #header_photo{
   border-radius:50%;
   border: 5px solid 	#ff6f69;
@@ -29,6 +34,7 @@ body{
 }
 #portfolio{
   padding: 50px;
+  margin: 0;
   width: 100%;
 }
 .portfolio-item{
@@ -81,8 +87,19 @@ a:visited {
   align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 775px) {
  .vertical-center{
    display: block;
+ }
+ 
+ #title{
+   display: block !important;
+   margin-top: 0;
+ }
+ .inner h1{
+  font-size: 30pt;
+ }
+ #fcc{
+   height: 25pt !important;
  }
 }

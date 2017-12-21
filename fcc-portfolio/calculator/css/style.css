@@ -69,6 +69,7 @@ a:visited {
     color: white;
     z-index: 999;
     font-family: 'Merriweather Sans', sans-serif;
+    width: 100vw;
 }
 #footer a:visited {
     text-decoration: inherit;
@@ -77,8 +78,15 @@ a:visited {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 400px) {
     #calculator{
         box-shadow: none;
+        width: 100%;
+    }
+}
+
+@media (max-height: 550px) {
+    #footer{
+        display: none;
     }
 }

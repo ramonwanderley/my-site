@@ -6,6 +6,7 @@ var r_eye_t = 36;
 window.onload = function() {
     $("#homer").css("display", "block");
     updateQuote();
+    $('#loading').css("display", "none");
 }
 
 $('.hover-button').hover(

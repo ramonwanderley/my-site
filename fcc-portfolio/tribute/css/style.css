@@ -39,8 +39,20 @@ body{
   font-family: 'Dosis', sans-serif;
 }
 
-.timeline-photos{
+.right{
+  float: right;
+}
+.left{
+  float: left;
+}
+
+
+.timeline-photos img{
   border-radius: 50%;
+  width: 100%;
+}
+.timeline-photos{
+  padding:10px;
 }
 
 .vcenter {
@@ -49,15 +61,20 @@ body{
     float: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   #name{
     font-size: 42pt;
   }
   #quote{
     font-size: 20pt;
   }
-  
-  .topic{
-    float: left;
+  .left{
+   text-align: center;
+  }
+  .right{
+    text-align: center;
+  }
+  .timeline-photos img{
+    width: 50%;
   }
 }
