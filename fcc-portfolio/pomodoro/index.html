@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>The Rock Pomodoro</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <script src="https://use.fontawesome.com/31485919b7.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "row" style="margin: 0">
+        <!-------Loading Page----->
+        <div id="loader" class="animated">
+            <div style="width: 200px; height: 200px; text-align: center" class="center">
+                <div id="loading">loading</div>
+                <h4>Turn the sound on!</h4>
+            </div>
+            <div style="width: 200px; height: 200px; text-align: center" class="center">
+                <div id="spinner"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-7" style="height: 100vh; text-align: center;">
+             
+            <!---------GO!------------>
+            <div id="task" class="animated">
+                <h2>The Task</h2>
+            </div>
+
+            <!-------FISRT PAGE----->
+            <div id="question" class = "animated">
+                <h2 id="questionText">What's your task?</h2>
+                <form>
+                    <input id="answer" type="text" autocomplete="off"></input>
+                    <input type="submit" style="display: none">
+                </form>
+            </div>
+
+            <!--------Pomodoro--------->
+            <div id="clock" class="animated bounceIn">0</div>
+            <div id = "go" class="animated bounceIn" onclick="go('go')">
+                <h2>GO!</h2>
+                <h3>25 Minutes</h3>
+            </div>
+            <!-----Pomodoro End--->
+            <div id = "short" class="animated bounceIn" onclick="go('short')">
+                <h2>Short Break</h2>
+                <h3>5 Minutes</h3>
+            </div>
+            
+            <div id = "finished" class="animated" onclick="finish()">
+                <h2>I Finished the Task!</h2>
+            </div>
+        </div>
+        
+        <div id="rockImgContainer" class="col-xs-5" style="height: 100vh">
+            <img id="rockImg" src="img/crossed.png">
+        </div>
+    </div>
+    
+    <div id="footer">
+        <h4>Developped by <a href="http://michaelbarney.com" target="_blank" class="hover-button"><b>Michael Barney</b></a></h4>
+    </div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+</body>
+</html>

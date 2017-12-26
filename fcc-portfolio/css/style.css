@@ -102,4 +102,7 @@ a:visited {
  #fcc{
    height: 25pt !important;
  }
+ #footer a{
+   display: block !important;
+ }
 }
