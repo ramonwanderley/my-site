@@ -167,7 +167,7 @@ body{
 }
 
 
-@media (max-height: 675px) {
+@media (max-height: 650px) {
     #footer{
         display: none;
     }
