@@ -139,13 +139,13 @@ function go(type){
     else if(type == "short"){
         $("#short").removeClass("bounceIn").addClass("bounceOut")
         $('#short').one('animationend', function(){
+            $("#short").css("display", "none");
             $("#clock").removeClass("bounceOut").addClass("bounceIn");
             $("#clock").css("display", "inline-block");
             $("#go").css("display", "none");
             play(7);
             startClock(5);
             $("#short").off('animationend');
-            
             $('#finished').css("display", "inline-block");
             $("#finished").removeClass("bounceOut").addClass("bounceIn");
         });   
