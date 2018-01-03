@@ -1,0 +1,190 @@
+/*****
+Pallette: Capuccino
+*********/
+
+body{
+    /*background: linear-gradient(135deg, #fff4e6 0%, #be9b7b  100%);*/
+    background: #fff4e6;
+    color: 	#4b3832;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#dark{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index:1000;
+}
+#popup{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index:1001;
+    color: 	#4b3832;
+    background-color: white;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 30px;
+}
+#won{
+    display: none;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index:1002;
+    color: 	#4b3832;
+    background-color: white;
+    margin: auto;
+    height: 30vh;
+    width: 30vw;
+    border-radius: 30px;  
+}
+#popup ol{
+    text-align: left;
+    display: block;
+    font-size: 15pt;
+    margin-bottom: 50px;
+}
+#popup iframe{
+    width: 45%;
+    height: 45%;
+}
+#popup h2{
+    margin-top: 50px;
+}
+.mybtn{
+    background-color: #854442;
+    color: white;
+    display: inline;
+    padding: 20px;
+    border-radius: 50px;
+}
+.mybtn:hover{
+    background-color: #4b3832;
+    cursor: pointer;
+}
+
+a{
+    color: #4b3832;
+}
+a:hover{
+    cursor: pointer;
+}
+#gameArea{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: auto;
+    height: 300px;
+    width: 950px;
+}
+#boards{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: auto;
+    height: 300px;
+    width: 950px;
+    transition: transform 0.5s ease-in-out;
+}
+.board{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0; bottom: 0;
+    margin: auto;
+    line-height: 0;
+    display: inline-block;
+    transition: all 0.5 ease-in-out;
+}
+.cell{
+    display:inline-block;
+    width: 33%;
+    height: 33%;
+    margin: 0;
+    margin-top: 0 !important;
+    border: solid 3px 	#4b3832;
+}
+.cell:hover{
+    cursor: pointer;
+}
+.cell h2{
+    color: transparent;
+    font-size: 40pt;
+    line-height: 50px;
+}
+.	#4b3832{
+    color: grey !important;
+}
+/****arrows*******/
+.arrow{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+#arrowRight {
+  width: 0px; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid 	#4b3832;
+  right: 0;
+}
+#arrowLeft {
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent; 
+  border-right:60px solid 	#4b3832; 
+  left: 0;
+}
+.arrow:hover{
+    cursor: pointer;
+}
+/***some board properties*****/
+#a{left: 0; z-index:0;}
+#b{left: 0; right:0; z-index: 1;}
+#c{right: 0; z-index: 0;}
+
+/**********all borders for each cell********/
+.zz{ border-top: none;  border-left:none;} .oz{border-top: none;} .tz{ border-top: none;  border-right:none;}
+.zo{ border-left:none;} .oo{} .to{border-right:none;}
+.zt{ border-bottom: none;  border-left:none;} .ot{border-bottom: none;} .tt{ border-bottom: none;  border-right:none;}
+
+/*********Footer*******/
+#footer{
+    position: absolute;
+    right: 0; left: 0; bottom: 10px; margin: auto;
+    text-align: center;
+    color: #3c2f2f;
+    z-index: 999;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+#footer a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+/***********Resizes*********/
+@media (max-width: 900px) {
+    #gameArea{
+        width: 100%;
+    }
+    #boards{
+        width: 100%;
+    }
+    .board{
+        width: 33vw;
+        height: 33vw;
+    }
+    .cells{
+        margin: none !important;
+    }
+    .cell h2{
+        color: transparent;
+        font-size: 7vw;
+        line-height: 0vw;
+    }
+}

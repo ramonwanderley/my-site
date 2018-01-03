@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <script src="https://use.fontawesome.com/31485919b7.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+</head>
+
+<body>
+    <div id="dark" class="animated fadeIn"></div>
+    <div id="won" class="animated bounceIn">
+        <h2 id="who">Who Won?</h2>
+        <br>
+        <div class="mybtn" id="redo">Play Again</div>
+    </div>
+    <div id="popup" class="animated bounceIn">
+        <br>
+        <div class="mybtn" id="1p">1 Player</div>
+        <div class="mybtn" id="2p">2 Players</div>
+        
+        <h2>How to Play:</h2>
+        <ol>
+            <li>All players are X's</li>
+            <li>A completed line closes the board.</li>
+            <li>The last player in the last completed board, loses.</li>
+        </ol>
+        <iframe  src="https://www.youtube.com/embed/ktPvjr1tiKk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <iframe  src="https://www.youtube.com/embed/h09XU8t8eUM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+    
+    <h1>3 Board - <a id="equis">X</a> Only - Misére - Tic Tac Toe</h1>
+    <h2 id="turner">Player 1's Turn</h2>
+    <!------Boards!------>
+    <div id="gameArea">
+        <div id="arrowLeft" class="arrow"></div>
+        
+        <div id="boards">
+            <div id="a" class="board">
+                <div class="cell zz"><h2>O</h2></div><div class="cell oz"><h2>O</h2></div><div class="cell tz"><h2>O</h2></div>
+                <div class="cell zo"><h2>O</h2></div><div class="cell oo"><h2>O</h2></div><div class="cell to"><h2>O</h2></div>
+                <div class="cell zt"><h2>O</h2></div><div class="cell ot"><h2>O</h2></div><div class="cell tt"><h2>O</h2></div>
+            </div>
+            <div id="b" class="board">
+                <div class="cell zz"><h2>O</h2></div><div class="cell oz"><h2>O</h2></div><div class="cell tz"><h2>O</h2></div>
+                <div class="cell zo"><h2>O</h2></div><div class="cell oo"><h2>O</h2></div><div class="cell to"><h2>O</h2></div>
+                <div class="cell zt"><h2>O</h2></div><div class="cell ot"><h2>O</h2></div><div class="cell tt"><h2>O</h2></div>
+            </div> 
+            <div id="c" class="board">
+                <div class="cell zz"><h2>O</h2></div><div class="cell oz"><h2>O</h2></div><div class="cell tz"><h2>O</h2></div>
+                <div class="cell zo"><h2>O</h2></div><div class="cell oo"><h2>O</h2></div><div class="cell to"><h2>O</h2></div>
+                <div class="cell zt"><h2>O</h2></div><div class="cell ot"><h2>O</h2></div><div class="cell tt"><h2>O</h2></div>
+            </div>
+        </div>
+       
+         <div id="arrowRight" class="arrow"></div> 
+    </div>
+    
+    <!-----------Footer---------->
+    <div id="footer">
+        <h4>Developed by <a href="http://michaelbarney.com" target="_blank" class="hover-button"><b>Michael Barney</b></a></h4>
+    </div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+</body>
+</html>
