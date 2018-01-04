@@ -91,7 +91,7 @@ $("#recife").click(function(){
         out = 1; 
    }
    else{
-        $("#recife").css("width", "50%");  
+        $("#recife").css("width", "50%");
         $("#recife").one("transitionend", function(){
             $("#carpina").css("display", "inline-block");
         });
