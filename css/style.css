@@ -312,6 +312,9 @@ text-decoration: none;
 	#contato h2{
 		font-size: 20pt;
 	}
+	#detail{
+		font-size: 15pt;
+	}
 }
 
 @media (max-width: 375px) {
