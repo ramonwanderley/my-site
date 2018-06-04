@@ -190,7 +190,23 @@ body{
 .owl-item{
 	text-align: center;
 }
-
+.owl-nav{
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+}
+.owl-nav span{
+	margin: 10px;
+}
+button{
+    transition: 0.2s linear all;
+}
+button:hover{
+	color: #FFC951!important;
+}
+.owl-nav :focus{
+	outline: none;
+}
 a:link {
 color: white;
 text-decoration: none;

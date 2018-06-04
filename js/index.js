@@ -95,12 +95,8 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop:false,
         margin:10,
-        nav:false,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        autoplaySpeed: 1000,
-        autoplayHoverPause: true,
-        rewind: true,
+        nav:true,
+        dots: false,
         center: true,
         responsive:{
             0:{
