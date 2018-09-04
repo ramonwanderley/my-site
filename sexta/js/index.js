@@ -17,6 +17,6 @@ $(document).ready(function(){
         $("#result").text("Já é sexta, já pode beber!");
     }
     else{
-        $("#result").text("Ainda é " + n + ", ainda não pode beber...");
+        $("#result").text("Hoje é " + n + ", ainda não pode beber...");
     }
 });
